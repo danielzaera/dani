@@ -35,4 +35,4 @@ jobs:
       
       # Use the output from the `maths` step
       - name: result
-        run: echo "el resultado es ${{result}}"
+        run: echo "el resultado es ${{ envresult }}"
