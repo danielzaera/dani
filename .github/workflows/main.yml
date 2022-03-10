@@ -1,0 +1,41 @@
+on: [push]
+
+jobs:
+  maths:
+    runs-on: ubuntu-latest
+   
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        - name: suma
+        uses: ./.github/actions/maths
+        with:
+          operation-A: 5
+          operation-B: 55
+          operation: suma
+       
+      - name: multiplicacion
+        uses: ./.github/actions/maths
+        with:
+          operation-A: 15
+          operation-B: ${{ env.result }}
+          operation: multiplicacion
+
+
+      - name: resta
+        uses: ./.github/actions/maths
+        with:
+          operation-A: ${{ env.result }}
+          operation-B: 50
+          operation: resta
+
+      - name: division
+        uses: ./.github/actions/maths
+        with:
+          operation-A: ${{ env.result }}
+          operation-B: 4
+          operation: division  
+      
+      # Use the output from the `maths` step
+      - name: result
+        run: echo "el resultado es ${{result}}"
