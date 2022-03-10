@@ -20,7 +20,7 @@ try {
 	
 	fi
   const result = $((result)) >> $GITHUB_ENV
-  core.setOutput("result", result);
+  core.setOutput("result", env.result);
   
   // Get the JSON webhook payload for the event that triggered the workflow
   const payload = JSON.stringify(github.context.payload, undefined, 2)
