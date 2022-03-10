@@ -20,8 +20,7 @@ jobs:
           operation-B: ${{ env.result }}
           operation: multiplicacion
       - name: resta
-        uses: ./.github/actions/maths
-        with:
+        uses: ./.github/actions
           operation-A: ${{ env.result }}
           operation-B: 50
           operation: resta
@@ -35,4 +34,4 @@ jobs:
       
       # Use the output from the `maths` step
       - name: result
-        run: echo "el resultado es ${{ env.result }}"
+        run: echo " el resultado es ${{ env.result }} "
