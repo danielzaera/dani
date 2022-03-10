@@ -5,6 +5,7 @@ try {
   // `operation-A` input defined in action metadata file
   const operation-A = core.getInput('operation-A');
   (`maths ${inputs.operation-A}!`);
+ result=0
   if [ "${{ inputs.operation }}" == "suma" ]; then
           result=${{ inputs.operation-A }}+${{ inputs.operation-B}}
           echo "sum of two numbers"
