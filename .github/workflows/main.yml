@@ -3,24 +3,22 @@ on: [push]
 jobs:
   maths:
     runs-on: ubuntu-latest
+    name: calculation operations
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-        - name: suma
+      - name: suma
         uses: ./.github/actions/maths
         with:
           operation-A: 5
           operation-B: 55
           operation: suma
-       
       - name: multiplicacion
         uses: ./.github/actions/maths
         with:
           operation-A: 15
           operation-B: ${{ env.result }}
           operation: multiplicacion
-
-
       - name: resta
         uses: ./.github/actions/maths
         with:
