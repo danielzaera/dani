@@ -5,7 +5,7 @@ try {
   // `operation-A` input defined in action metadata file
   const operation-A = core.getInput('operation-A');
   (`maths ${inputs.operation-A}!`);
-   if [ "${{ inputs.operation }}" == "suma" ]; then
+  if [ "${{ inputs.operation }}" == "suma" ]; then
           result=${{ inputs.operation-A }}+${{ inputs.operation-B}}
           echo "sum of two numbers"
        elif [ "${{ inputs.operation }}" == "multiplicacion" ]; then
@@ -17,11 +17,11 @@ try {
        else
           echo "error la operacion no existe!"
           exit 1
-		  
-	 fi
- 
-  const result = $((result)) >> $GITHUB_ENV
+	
+	fi
+  const result = $((env.result)) >> $GITHUB_ENV
   core.setOutput("result", result);
+  
   // Get the JSON webhook payload for the event that triggered the workflow
   const payload = JSON.stringify(github.context.payload, undefined, 2)
   console.log(`The event payload: ${payload}`);
