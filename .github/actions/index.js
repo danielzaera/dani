@@ -6,7 +6,7 @@ try {
   const operationB = parseInt(core.getInput('operation-B'));
   const operation = core.getInput('operation');	
   
- const result = 0;
+ var result = 0;
  
  console.log(`operacion: ${operation}`);
 console.log(`operationA: ${operationA}`);
