@@ -7,7 +7,7 @@ try {
   const operation = core.getInput('operation');	
   
  const result=0
- console.log(`Operation A = ${operationA}`);
+ 
 	
  if (operation == suma)
  {
