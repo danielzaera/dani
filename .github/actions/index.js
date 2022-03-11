@@ -14,19 +14,19 @@ console.log(`operationB: ${operationB}`);
 	
  if (operation == "suma")
  {
-  	result=operationA + operationB
+  	result = operationA + operationB
  } 
  else if (operation == "resta")
  {
-  	result=operationA - operationB
+  	result = operationA - operationB
  }
  else if (operation == "multiplicacion")
  {
-  	result=operationA * operationB
+  	result = operationA * operationB
  } 
  else if (operation == "division")
  {
-  	result=operationA / operationB
+  	result = operationA / operationB
  } 
  else {
 	 console.log('error la operacion no existe!');
