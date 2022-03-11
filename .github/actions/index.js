@@ -8,19 +8,20 @@ try {
   
  const result=0
  console.log(`OperationA = Hello ${operationA}`);
- if (operationA == suma)
+	
+ if (operation == 'suma')
  {
   	result=operationA+operationB
  } 
- else if (operationA == resta)
+ else if (operation == 'resta')
  {
   	result=operationA-operationB
  }
- else if (operationA == multiplicacion)
+ else if (operation == 'multiplicacion')
  {
   	result=operationA*operationB
  } 
- else if (operationA == division)
+ else if (operation == 'division')
  {
   	result=operationA/operationB
  } 
