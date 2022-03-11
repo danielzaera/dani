@@ -9,21 +9,21 @@ try {
  const result=0
  console.log(`Operation A = ${operationA}`);
 	
- if (operation === suma)
+ if (operation == suma)
  {
-  	result=operationA+operationB
+  	result=operationA + operationB
  } 
- else if (operation === resta)
+ else if (operation == resta)
  {
-  	result=operationA-operationB
+  	result=operationA - operationB
  }
- else if (operation === multiplicacion)
+ else if (operation == multiplicacion)
  {
-  	result=operationA*operationB
+  	result=operationA * operationB
  } 
- else if (operation === division)
+ else if (operation == division)
  {
-  	result=operationA/operationB
+  	result=operationA / operationB
  } 
  else {
 	 echo "error la operacion no existe!"
