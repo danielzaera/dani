@@ -35,8 +35,8 @@ console.log(`operationB: ${operationB}`);
 	 console.log(`error la operacion no existe!`);
  }
 	
-  core.setOutput("result", result);
-  console.log(`${result} >> $GITHUB_ENV`);
+  core.setOutput("result", parseInt(result));
+  
   console.log(`Result: ${result}`);
 	
 } catch (error) {
