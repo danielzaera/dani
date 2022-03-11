@@ -35,7 +35,7 @@ console.log(`operationB: ${operationB}`);
 	 console.log(`error la operacion no existe!`);
  }
 	
-  core.setOutput("result", ${result});
+  core.setOutput("result", result);
   
   console.log(`Result: ${result}`);
 	
