@@ -6,7 +6,7 @@ try {
   const operationB = core.getInput('operation-B');
   const operation = core.getInput('operation');	
   
- const result=0
+ const result = 0;
  
  console.log(`operacion: ${operation}`);
 console.log(`operationA: ${operationA}`);
@@ -14,19 +14,19 @@ console.log(`operationB: ${operationB}`);
 	
  if (operation == "suma")
  {
-  	result = operationA + operationB
+  	result = operationA + operationB;
  } 
  else if (operation == "resta")
  {
-  	result = operationA - operationB
+  	result = operationA - operationB;
  }
  else if (operation == "multiplicacion")
  {
-  	result = operationA * operationB
+  	result = operationA * operationB;
  } 
  else if (operation == "division")
  {
-  	result = operationA / operationB
+  	result = operationA / operationB;
  } 
  else {
 	 console.log('error la operacion no existe!');
