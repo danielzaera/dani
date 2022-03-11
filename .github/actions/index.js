@@ -8,19 +8,23 @@ try {
   
  const result=0
  
- if (operationA == "summa")
+ if (operationA == "suma")
  {
   	result=operationA+operationB
- } else if (operationA == "resta")
+ } 
+ else if (operationA == "resta")
  {
   	result=operationA-operationB
- } else if (operationA == "multiplicacion")
+ }
+ else if (operationA == "multiplicacion")
  {
   	result=operationA*operationB
- } else if (operationA == "division")
+ } 
+ else if (operationA == "division")
  {
   	result=operationA/operationB
- } else {
+ } 
+ else {
 	 echo "error la operacion no existe!"
          exit 1
  }
