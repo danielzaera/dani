@@ -14,14 +14,17 @@ console.log(`operationB: ${operationB}`);
 	
  if (operation == "suma")
  {
+	console.log(`estoy suma`);
   	result = operationA + operationB;
  } 
  else if (operation == "resta")
  {
+	 console.log(`estoy resta`);
   	result = operationA - operationB;
  }
  else if (operation == "multiplicacion")
  {
+	 console.log(`estoy multi`);
   	result = operationA * operationB;
  } 
  else if (operation == "division")
