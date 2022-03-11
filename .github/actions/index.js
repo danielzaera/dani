@@ -4,7 +4,7 @@ const github = require('@actions/github');
 try {
   const operationA = parseInt(core.getInput('operation-A'));	
   const operationB = parseInt(core.getInput('operation-B'));
-  const operation = parseInt(core.getInput('operation'));	
+  const operation = core.getInput('operation');	
   
  const result = 0;
  
