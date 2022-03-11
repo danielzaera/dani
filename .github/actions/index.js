@@ -8,6 +8,7 @@ try {
   
  const result=0
  
+ console.log('operacion: ${nameToGreet}');
 	
  if (operation == suma)
  {
