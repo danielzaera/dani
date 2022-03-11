@@ -26,7 +26,7 @@ try {
   	result=operationA / operationB
  } 
  else {
-	 echo "error la operacion no existe!"
+	 console.log('error la operacion no existe!');
  }
 	
   core.setOutput("result", result);
