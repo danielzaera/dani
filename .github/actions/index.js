@@ -32,11 +32,12 @@ console.log(`operationB: ${operationB}`);
   	result = operationA / operationB;
  } 
  else {
-	 console.log('error la operacion no existe!');
+	 console.log(`error la operacion no existe!`);
  }
 	
   core.setOutput("result", result);
- 
+  console.log(`Result: ${result}`);
+	
 } catch (error) {
   core.setFailed(error.message);
 }
