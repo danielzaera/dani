@@ -36,7 +36,7 @@ console.log(`operationB: ${operationB}`);
  }
 	
   core.setOutput("result", result);
-  result = $(( env.result)) >> $GITHUB_ENV
+  console.log(`${result} >> $GITHUB_ENV`);
   console.log(`Result: ${result}`);
 	
 } catch (error) {
