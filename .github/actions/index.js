@@ -8,7 +8,9 @@ try {
   
  const result=0
  
- console.log('operacion: ${nameToGreet}');
+ console.log('operacion: ${operation}');
+console.log('operationA: ${operationA}');
+console.log('operationB: ${operationB}');
 	
  if (operation == "suma")
  {
