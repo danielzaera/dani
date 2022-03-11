@@ -7,21 +7,21 @@ try {
   const operation = core.getInput('operation');	
   
  const result=0
- console.log(`OperationA = Hello ${operationA}`);
+ console.log(`Operation A = ${operationA}`);
 	
- if (operation == 'suma')
+ if (operation === suma)
  {
   	result=operationA+operationB
  } 
- else if (operation == 'resta')
+ else if (operation === resta)
  {
   	result=operationA-operationB
  }
- else if (operation == 'multiplicacion')
+ else if (operation === multiplicacion)
  {
   	result=operationA*operationB
  } 
- else if (operation == 'division')
+ else if (operation === division)
  {
   	result=operationA/operationB
  } 
