@@ -2,9 +2,9 @@ const core = require('@actions/core');
 const github = require('@actions/github');
 
 try {
-  const operationA = core.getInput('operation-A');	
-  const operationB = core.getInput('operation-B');
-  const operation = core.getInput('operation');	
+  const operationA = parseInt(core.getInput('operation-A'));	
+  const operationB = parseInt(core.getInput('operation-B'));
+  const operation = parseInt(core.getInput('operation'));	
   
  const result = 0;
  
