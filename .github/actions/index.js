@@ -10,19 +10,19 @@ try {
  
  console.log('operacion: ${nameToGreet}');
 	
- if (operation == suma)
+ if (operation == "suma")
  {
   	result=operationA + operationB
  } 
- else if (operation == resta)
+ else if (operation == "resta")
  {
   	result=operationA - operationB
  }
- else if (operation == multiplicacion)
+ else if (operation == "multiplicacion")
  {
   	result=operationA * operationB
  } 
- else if (operation == division)
+ else if (operation == "division")
  {
   	result=operationA / operationB
  } 
