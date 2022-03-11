@@ -8,25 +8,24 @@ try {
   
  const result=0
  
- if (operationA == "suma")
+ if (operationA == suma)
  {
   	result=operationA+operationB
  } 
- else if (operationA == "resta")
+ else if (operationA == resta)
  {
   	result=operationA-operationB
  }
- else if (operationA == "multiplicacion")
+ else if (operationA == multiplicacion)
  {
   	result=operationA*operationB
  } 
- else if (operationA == "division")
+ else if (operationA == division)
  {
   	result=operationA/operationB
  } 
  else {
 	 echo "error la operacion no existe!"
-         exit 1
  }
 	
   core.setOutput("result", result);
